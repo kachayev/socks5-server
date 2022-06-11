@@ -17,7 +17,7 @@ pub mod bind;
 pub mod connect;
 
 pub struct IncomingConnection {
-    stream: TcpStream,
+    pub stream: TcpStream,
     auth: Arc<dyn Auth + Send + Sync>,
 }
 

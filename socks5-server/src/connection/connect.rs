@@ -15,7 +15,7 @@ use tokio::{
 
 #[derive(Debug)]
 pub struct Connect<S> {
-    stream: TcpStream,
+    pub stream: TcpStream,
     _state: S,
 }
 
